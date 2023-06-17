@@ -23,7 +23,7 @@ jobs:
         if: ${{ steps.cache_node_modules.outputs.cache-hit != 'true' }}
       - run: >
           npx chromatic
-            --project-token=chpt_f638cf15177192d
-            --ci
-            --exit-once-uploaded ${{ github.ref_name }}
-            --auto-accept-changes ${{ github.ref_name }}
+          --project-token=chpt_f638cf15177192d
+          --ci
+          --exit-once-uploaded ${{ github.ref_name }}
+          --auto-accept-changes ${{ github.ref_name }}
